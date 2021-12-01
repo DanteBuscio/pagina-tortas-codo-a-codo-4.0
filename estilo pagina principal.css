@@ -1,0 +1,420 @@
+*{
+  margin: 0;
+  padding: 0;  
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Imagenes/bakery.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-content: center;
+}
+
+nav img{
+  width: 150px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative; 
+}
+
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: pink ;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.burga{
+  display: none;
+  cursor: pointer;
+}
+
+.burga div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.caja-texto{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.caja-texto h1{
+  font-size: 62px;
+}
+
+.caja-texto p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+
+.boton-hero{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+}
+
+.boton-hero:hover{
+  border: 1px solid pink;
+  background: pink;
+  transition: 1s;
+}
+
+
+nav .fas{
+  display: none;
+}
+
+
+
+
+/*---------Postres-----------*/
+
+.postres{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.postres h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.postres h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.filas-postres{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnas-postres{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.columnas-postres img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.columnas-postres img:hover{
+  box-shadow: 0 0 20px 0 rgba(248, 148, 215, 0.925);
+}
+
+.columnas-postres p{
+  padding: 0;
+}
+
+.columnas-postres h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+
+
+/*--------reseñas-----------*/
+
+.reseñas{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.res-fil{
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
+}
+
+
+
+.res-col{
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: rgb(252, 246, 247);
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-basis: 44%;
+  margin: 2%;
+}
+
+.res-col img{
+  height: 100px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.res-col p{
+  padding: 0;
+}
+
+.res-col h3{
+  margin-top: 15px;
+  text-align: left;
+}
+
+.res-col .fas, .far{
+  color: gold;
+}
+
+
+/*--- CONTACTO -----*/
+
+.ctato{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Imagenes/10.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.ctato h1{
+  color:white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+
+
+.ctato-b{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+.ctato-b:hover{
+    border: 1px solid pink;
+    background: pink;
+    transition: 1s;
+  }
+
+
+
+/*----footer----*/
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.iconos-f .fab{
+  color: #db7ac6;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+
+}
+
+.iconos-f a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px){
+  .caja-texto h1{
+    font-size: 20px;
+  }
+
+
+  .nav-links ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 98px;
+
+  }
+
+  .nav-links{
+    position: absolute;
+    background: pink;
+    right: 0px;
+    height: 100vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    text-align: left;
+    z-index: 2;
+  }
+
+  .nav-links li{
+    opacity: 0;
+  }
+
+  .nav-active{
+  transform: translateX(0%);
+  }
+  
+  nav .fas{
+    display: block;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  .nav-links ul{
+    padding: 30px;
+  }
+
+  .filas-postres{
+    flex-direction: column;
+  }
+
+  .res-fil{
+    flex-direction: column;
+  }
+
+  .res-col img{
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  .ctato h1{
+    font-size: 24px;
+  }
+
+
+  body{
+  overflow-x: hidden;
+  }
+
+  .burga{
+  display: block;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+  .filas-postres{
+    flex-direction: column;
+  }
+
+
+  .res-fil{
+    flex-direction: column;
+  }
+
+  .res-col img{
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+}
+
+
+
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
